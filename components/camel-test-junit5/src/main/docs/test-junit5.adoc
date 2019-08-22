@@ -57,6 +57,8 @@ Projects using `camel-test` would need to use `camel-test-junit5`. For instance,
 </dependency>
 ----
 
+Tips: Note that it's possible to reference both `camel-test` and `camel-test-junit5` thus allowing to migrate camel tests once at a time.
+
 === Typical migration steps linked to JUnit 5 support in Camel Test
 * Imports of `org.apache.camel.test.junit4.\*` should be replaced with `org.apache.camel.test.junit5.*`
 * `TestSupport` static methods should be imported where needed, for instance `import static org.apache.camel.test.junit5.TestSupport.assertIsInstanceOf`
